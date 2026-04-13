@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EduSpark — Where Learning Meets Fun</title>
+  <title>BharatSiksha AI — Where Learning Meets Fun</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -871,7 +871,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="logo">Edu<span>Spark</span></div>
+  <div class="logo">BharatSiksha<span> AI</span></div>
   <ul>
     <li><a onclick="document.getElementById('edutainment').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;">About</a></li>
     <li><a onclick="document.getElementById('subjects').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;">Subjects</a></li>
@@ -921,7 +921,7 @@
       Where <span class="accent-orange">Education</span><br/>
       Meets <span class="accent-teal">Entertainment</span>
     </h1>
-    <p>Welcome to EduSpark — the tuition centre that believes learning should feel like play. Our unique <strong style="color:#fff">Edutainment</strong> approach fuses curriculum mastery with creative, game-based, and storytelling methods so students actually <em>love</em> coming to class.</p>
+    <p>Welcome to BharatSiksha AI — the tuition centre that believes learning should feel like play. Our unique <strong style="color:#fff">Edutainment</strong> approach fuses curriculum mastery with creative, game-based, and storytelling methods so students actually <em>love</em> coming to class.</p>
     <div class="hero-btns">
       <a onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="btn btn-primary" style="cursor:pointer;">🚀 Start Learning!</a>
       <a onclick="document.getElementById('edutainment').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;" class="btn btn-outline">⚗️ Enter the Lab</a>
@@ -1310,7 +1310,7 @@
 <section class="why-section" id="why">
   <div class="why-grid">
     <div>
-      <div class="section-tag">Why EduSpark?</div>
+      <div class="section-tag">Why BharatSiksha AI?</div>
       <h2 class="section-title">Learning That Actually Works</h2>
       <p class="section-sub">We combine the best of modern pedagogy with genuine fun, so students grow in confidence, curiosity, and results.</p>
       <div class="why-list">
@@ -1488,8 +1488,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Edu<span>Spark</span></div>
-  <p>© 2025 EduSpark Tuition Centre. All rights reserved.</p>
+  <div class="footer-logo">BharatSiksha<span> AI</span></div>
+  <p>© 2025 BharatSiksha AI Tuition Centre. All rights reserved.</p>
   <div class="footer-links">
     <a onclick="document.getElementById('edutainment').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;">About</a>
     <a onclick="document.getElementById('subjects').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;">Subjects</a>
@@ -1524,16 +1524,16 @@ window.addEventListener('DOMContentLoaded', function() {
       }
 
       // Save to localStorage so you can retrieve enquiries
-      var enquiries = JSON.parse(localStorage.getItem('eduspark_enquiries') || '[]');
+      var enquiries = JSON.parse(localStorage.getItem('bharatsiksha_enquiries') || '[]');
       enquiries.push({
         name: name, phone: phone, cls: cls,
         message: message,
         date: new Date().toLocaleString('en-IN')
       });
-      localStorage.setItem('eduspark_enquiries', JSON.stringify(enquiries));
+      localStorage.setItem('bharatsiksha_enquiries', JSON.stringify(enquiries));
 
       // Open mailto as a link (not popup — avoids blocker)
-      var subject = encodeURIComponent('EduSpark Enquiry from ' + name);
+      var subject = encodeURIComponent('BharatSiksha AI Enquiry from ' + name);
       var body    = encodeURIComponent(
         'Name: ' + name + '\n' +
         'Phone: ' + phone + '\n' +
@@ -1808,7 +1808,7 @@ window.addEventListener('DOMContentLoaded', function() {
   <!-- Header -->
   <div style="background:var(--orange); padding:1rem 1.2rem; display:flex; align-items:center; justify-content:space-between;">
     <div>
-      <div style="font-family:'Fredoka One',cursive; color:#fff; font-size:1.1rem;">EduSpark Assistant 🤖</div>
+      <div style="font-family:'Fredoka One',cursive; color:#fff; font-size:1.1rem;">BharatSiksha AI Assistant 🤖</div>
       <div style="color:rgba(255,255,255,0.8); font-size:0.75rem;">Ask me anything about our courses!</div>
     </div>
     <button id="closeChatBtn" style="background:none; border:none; color:#fff; font-size:1.4rem; cursor:pointer; line-height:1;">✕</button>
@@ -1817,7 +1817,7 @@ window.addEventListener('DOMContentLoaded', function() {
   <!-- Messages -->
   <div id="chatMessages" style="height:300px; overflow-y:auto; padding:1rem; display:flex; flex-direction:column; gap:0.75rem;">
     <div class="bot-msg" style="background:rgba(255,255,255,0.08); border-radius:12px 12px 12px 4px; padding:0.75rem 1rem; color:#ddd; font-size:0.88rem; max-width:85%; line-height:1.5;">
-      👋 Hi! I'm the EduSpark assistant. Ask me about subjects, fees, classes, or anything else!
+      👋 Hi! I'm the BharatSiksha AI assistant. Ask me about subjects, fees, classes, or anything else!
     </div>
   </div>
 
@@ -1861,10 +1861,10 @@ window.addEventListener('DOMContentLoaded', function() {
         body: JSON.stringify({
           model: 'claude-sonnet-4-20250514',
           max_tokens: 400,
-          system: `You are a friendly and professional assistant for EduSpark, a tuition centre that uses the Edutainment method — combining education with entertainment.
+          system: `You are a friendly and professional assistant for BharatSiksha AI, a tuition centre that uses the Edutainment method — combining education with entertainment.
 
 Your job is to:
-1. Answer questions about fees, subjects, timings and about EduSpark
+1. Answer questions about fees, subjects, timings and about BharatSiksha AI
 2. Collect the name, phone number and class of interested students/parents
 3. Help book a trial class by asking for their preferred time and contact details
 4. Always be warm, encouraging and professional
@@ -1912,8 +1912,8 @@ A: Please contact us to find out about current online and offline class options.
 Q: What is Edutainment?
 A: Edutainment is our unique teaching approach that combines Education with Entertainment. We use games, storytelling, creative activities and rewards to make learning fun and effective.
 
-Q: How is EduSpark different from other tuition centres?
-A: EduSpark uses the Edutainment method — we believe students learn best when they enjoy the process. Small batches, expert teachers, and game-based learning set us apart.
+Q: How is BharatSiksha AI different from other tuition centres?
+A: BharatSiksha AI uses the Edutainment method — we believe students learn best when they enjoy the process. Small batches, expert teachers, and game-based learning set us apart.
 
 Q: How do I enroll?
 A: Simply call or WhatsApp us at 6207590802 or click the Send Enquiry button on our website and we will get back to you quickly.
